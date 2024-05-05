@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head> 
+		<title> Service on the Go | So'GO </title>
+	</head>
+
+	<body style="background-color: lightgoldenrodyellow; text-align: center;">
+		<div class="text" style="text-align: center; color: saddlebrown; font-family: georgia;">
+			<h1> Service on the Go </h1>
+			<p> hello </p>
+		</div>
+
+        <div class="logo">
+        	<img src="logo.jpg">
+        		<style>
+    				.logo img{
+    					width: 20%;
+    					height: 20%;
+    					display: flex;
+    					justify-content: center;
+    					align-items: flex-start;
+  					}
+				</style>
+		</div>
+
+		<div class="search-container">
+  			<input type="text" placeholder="Search...">
+  			<form action="/search" method="GET">
+  			<button> Search </button>
+				<style>
+  					.search-container {
+    					display: flex;
+    					justify-content: center;
+    					align-items: center;
+    					margin-top: 20px;
+  					}
+
+  					.search-container input[type="text"] {
+    					padding: 10px;
+    					width: 300px;
+    					border: none;
+    					border-radius: 5px;
+    					outline: none;
+    					font-size: 16px;
+  					}
+
+  					.search-container button {
+   						padding: 10px;
+    					background-color: burlywood;
+    					border: 10px;
+    					border-radius: 5px;
+    					color: black;
+    					font-size: 16px;
+    					cursor: pointer;
+  					}
+				</style>
+			</div>
+
+		<div class="buttons" style="text-align: center;">
+        	<button class="homepage-button" id="homeButton" onclick="redirectToPage1()"> Home </button>
+        	<button class="homepage-button" id="aboutButton" onclick="redirectToPage2()"> About </button>
+        	<button class="homepage-button" id="homeButton" onclick="redirectToPage3()"> Services </button>
+        	<button class="homepage-button" id="aboutButton" onclick="redirectToPage4()"> Contact </button>
+
+        	<style> 
+        		.homepage-button{
+        			padding: 10px 20px;
+        			font-size: 15px;
+        			border: none;
+        			border-radius: 5px;
+        			cursor: pointer;
+        			margin-top: 15px;
+        			margin-right: 10px;
+        			background-color: burlywood; 
+        		}
+
+        		.hidden{
+        			display: none;
+        		}
+        	</style>
+
+        	<script>
+        		function redirectToPage1(){
+        			window.location.href="home.html";
+        		}
+
+        		function redirectToPage2(){
+        			window.location.href="about.html";
+        		} 
+
+        		function redirectToPage3(){
+        			window.location.href="services.html";
+        		}
+
+        		function redirectToPage4(){
+        			window.location.href="contact.html";
+        		}
+        	</script>
+        </div>
+
+        <footer>
+			<p>&copy; 2024 Service on the Go. All rights reserved. </p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+	<div class="header" style="text-align: center;">
+		<h2> Services </h2>
+	</div>
+
+	<div class="search-options">
+        <style>
+        	body{
+        		background-color: lightgoldenrodyellow;
+        		text-align: left;
+        	}
+
+        	.search-options {
+    			display: flex;
+    			justify-content: left;
+    			align-items: left;
+    			margin-top: 20px;
+			}
+
+			.search-box {
+   	 			width: 410px;
+    			height: 50px;
+    			background-color: lightgoldenrodyellow;
+    			border: 1px solid;
+    			border-radius: 10px;
+    			margin: 0 10px;
+    			cursor: pointer;
+    			display: flex;
+    			justify-content: center;
+    			align-items: center;
+			}
+
+			.search-box:hover {
+    			background-color: lightgoldenrodyellow;
+			}
+
+			.search-box h3 {
+   				margin: 0;
+			}
+    </style>
+
+
+    <section class="search-options">
+    	<div class="search-box" onclick="redirectToPageX()">
+    		<h3> General </h3>
+    	</div>
+
+    	<div class="search-box" onclick="redirectToPageY()">
+    		<h3> Personal </h3>
+    	</div>
+
+    	<div class="search-box" onclick="redirectToPageZ()">
+    		<h3> Health </h3>
+    	</div>
+
+    	<script>
+        		function redirectToPageX(){
+        			window.location.href="general.html";
+        		} 
+
+        		function redirectToPageY(){
+        			window.location.href="personal.html";
+        		}
+
+        		function redirectToPageZ(){
+        			window.location.href="health.html";
+        		}
+        </script>
+    </section>
+</body>
+</html>
